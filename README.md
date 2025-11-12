@@ -162,9 +162,11 @@ See `bench.py` for benchmark.
 - Total Requests: 256 sequences
 - Input Length: Randomly sampled between 100–1024 tokens
 - Output Length: Randomly sampled between 100–1024 tokens
-Nano-vLLM-Ascend 实在太慢了只跑了10条seq
+
 **Performance Results:**
+Nano-vLLM-Ascend 实在太慢了只跑了10条seq
 Nano-vLLM-Ascend可以忽略[哭脸]
+
 | Inference Engine | Output Tokens | Time (s) | Throughput (tokens/s) |
 |----------------|-------------|----------|-----------------------|
 | vLLM           | 133,966     | 98.37    | 1361.84               |
