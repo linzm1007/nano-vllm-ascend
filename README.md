@@ -4,6 +4,8 @@ nano-vllm是开源的一个gpu推理项目，基于开源版本弄的一个ascen
 
 ## 框架层流程图
 
+![Qwen3-0.6B.png](assets/nona-vllm框架.png)
+
 ## 模型层流程图
 ![Qwen3-0.6B.png](assets/Qwen3-0.6B.png)
 ## 特性
@@ -149,7 +151,7 @@ ascend-dmi -c #查看
   * 1.显卡:A3 910C
   * 2.驱动版本:24.1.rc3.10
   * 3.固件版本:7.5.0.109.220
-* ​软件环境​：
+* 软件环境​：
   * 1.CANN包 8.3.RC1
   * 2.PTA版本：torch-npu 2.5.1.post2+gitd7a85f8，torch 2.5.1
 
