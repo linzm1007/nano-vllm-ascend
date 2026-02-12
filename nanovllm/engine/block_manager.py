@@ -25,12 +25,15 @@ class Block:
 
 class BlockManager:
 
-    def __init__(self, num_blocks: int, block_size: int):
+    def __init__(self, num_blocks: int, block_size: int, non_cache_token_ids: list[int] | None = None):
         self.block_size = block_size
         self.blocks: list[Block] = [Block(i) for i in range(num_blocks)]
         self.hash_to_block_id: dict[int, int] = dict()
         self.free_block_ids: deque[int] = deque(range(num_blocks))
         self.used_block_ids: set[int] = set()
+        # Tokens in this set should never trigger cache hits because their
+        # embeddings depend on per-request image features.
+        self.non_cache_token_ids: set[int] = set(non_cache_token_ids or [])
 
     @classmethod
     def compute_hash(cls, token_ids: list[int], prefix: int = -1):
@@ -48,7 +51,7 @@ class BlockManager:
         self.used_block_ids.add(block_id)
         return self.blocks[block_id]
 
-    def _deallocate_block(self, block_id: int) -> Block:
+    def _deallocate_block(self, block_id: int):
         assert self.blocks[block_id].ref_count == 0
         self.used_block_ids.remove(block_id)
         self.free_block_ids.append(block_id)
@@ -62,6 +65,9 @@ class BlockManager:
         cache_miss = False
         for i in range(seq.num_blocks):
             token_ids = seq.block(i)
+            # adapter vl
+            if any(token in self.non_cache_token_ids for token in token_ids):
+                cache_miss = True
             h = self.compute_hash(token_ids, h) if len(token_ids) == self.block_size else -1
             block_id = self.hash_to_block_id.get(h, -1)
             if block_id == -1 or self.blocks[block_id].token_ids != token_ids:
@@ -87,7 +93,7 @@ class BlockManager:
             block.ref_count -= 1
             if block.ref_count == 0:
                 self._deallocate_block(block_id)
-        seq.num_cached_tokens = 0
+        # seq.num_cached_tokens = 0
         seq.block_table.clear()
 
     def can_append(self, seq: Sequence) -> bool:
@@ -103,7 +109,7 @@ class BlockManager:
             block_table.append(block_id)
         elif len(seq) % self.block_size == 0:
             assert last_block.hash == -1
-            token_ids = seq.block(seq.num_blocks-1)
+            token_ids = seq.block(seq.num_blocks - 1)
             prefix = self.blocks[block_table[-2]].hash if len(block_table) > 1 else -1
             h = self.compute_hash(token_ids, prefix)
             last_block.update(h, token_ids)

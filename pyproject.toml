@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nano-vllm-ascend"
-version = "1.0.0"
+version = "0.1.0"
 authors = [{ name = "linziming" }]
 license = "MIT"
 license-files = ["LICENSE"]
@@ -13,12 +13,13 @@ description = "a lightweight vLLM implementation built from scratch"
 requires-python = ">=3.10,<3.13"
 dependencies = [
     "torch>=2.5.1",
-    "transformers>=4.51.0",
+    "transformers>=5.0.0",
     "xxhash",
+    "mistral_common>=1.9.0",
 ]
 
 [project.urls]
-Homepage=""
+Homepage="https://github.com/linzm1007/nano-vllm-ascend"
 
 [tool.setuptools.packages.find]
 where = ["."]
