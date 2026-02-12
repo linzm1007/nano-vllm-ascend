@@ -1,0 +1,1181 @@
+/usr/local/lib/python3.11/site-packages/torch_npu/dynamo/torchair/__init__.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+INFO 01-24 21:47:01,778 bench.py:25] args: EngineArgs(model='/data_mount/models/Qwen2-0.5B/', dtype='auto', seed=0, tensor_parallel_size=1, block_size=256, gpu_memory_utilization=0.9, max_num_batched_tokens=16384, max_num_seqs=256, enforce_eager=False, hccl_port=3456)
+INFO 01-24 21:47:01,780 llm_engine.py:30] config: Config(model=/data_mount/models/Qwen2-0.5B/, max_num_batched_tokens=16384, max_num_seqs=256, max_model_len=4096, gpu_memory_utilization=0.9, tensor_parallel_size=1, enforce_eager=False, eos=-1, kvcache_block_size=256, num_kvcache_blocks=-1, use_graph_cache=False, hccl_port=3456, hf_config=Qwen2Config(...))
+INFO 01-24 21:47:03,183 model_runner.py:128] Total NPU Mem: 62740.00 MB
+INFO 01-24 21:47:03,184 model_runner.py:129] Used NPU Mem (Weights): 1504.42 MB
+INFO 01-24 21:47:03,184 model_runner.py:130] Single Block Size: 3.00 MB
+INFO 01-24 21:47:03,184 model_runner.py:131] Allocating 18233 blocks.
+INFO 01-24 21:47:03,256 model_runner.py:135] KV Cache allocated successfully shape: (2, 24, 18233, 256, 128)
+INFO 01-24 21:47:03,257 model_runner.py:52] config: Config(model=/data_mount/models/Qwen2-0.5B/, max_num_batched_tokens=16384, max_num_seqs=256, max_model_len=4096, gpu_memory_utilization=0.9, tensor_parallel_size=1, enforce_eager=False, eos=-1, kvcache_block_size=256, num_kvcache_blocks=18233, use_graph_cache=False, hccl_port=3456, hf_config=Qwen2Config(...))
+INFO 01-24 21:47:03,533 llm_engine.py:67] warmup start !!!!!!
+INFO 01-24 21:47:03,546 model_runner.py:258] prefill execute tokens: 16384
+INFO 01-24 21:47:04,447 model_runner.py:258] prefill execute tokens: 143
+INFO 01-24 21:47:04,481 model_runner.py:258] decode execute tokens: 4
+INFO 01-24 21:47:37,677 llm_engine.py:80] warmup end !!!!!!
+INFO 01-24 21:47:37,677 llm_engine.py:81] Successfully finished model warmup in 34.14 seconds.
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s]INFO 01-24 21:47:37,746 model_runner.py:258] prefill execute tokens: 3
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=0tok/s]INFO 01-24 21:47:37,781 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=71tok/s]INFO 01-24 21:47:37,795 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=84tok/s]INFO 01-24 21:47:37,807 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=86tok/s]INFO 01-24 21:47:37,819 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:37,830 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:37,842 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:37,853 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:37,865 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:37,877 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:37,888 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=79tok/s]INFO 01-24 21:47:37,901 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=86tok/s]INFO 01-24 21:47:37,913 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:37,924 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:37,936 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=86tok/s]INFO 01-24 21:47:37,948 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:37,959 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:37,971 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:37,982 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:37,994 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,005 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,017 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,028 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,040 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,051 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,063 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,074 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,086 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,098 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,109 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,121 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,132 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,144 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,155 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,167 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,178 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,189 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,201 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,212 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,224 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,235 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,247 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,258 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=89tok/s]INFO 01-24 21:47:38,270 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,281 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,293 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,304 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,316 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,327 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=86tok/s]INFO 01-24 21:47:38,339 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,350 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,362 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,373 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,385 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,396 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,408 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=88tok/s]INFO 01-24 21:47:38,420 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,431 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,443 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,454 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,466 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,477 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,489 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]INFO 01-24 21:47:38,501 model_runner.py:258] decode execute tokens: 1
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s, Prefill=115tok/s, Decode=87tok/s]
+Generating: 100%|██████████| 1/1 [00:00<00:00,  1.29it/s, Prefill=115tok/s, Decode=87tok/s]
+Generating: 100%|██████████| 1/1 [00:00<00:00,  1.29it/s, Prefill=115tok/s, Decode=87tok/s]
+INFO 01-24 21:47:38,519 model_runner.py:258] prefill execute tokens: 15651
+INFO 01-24 21:47:38,657 model_runner.py:258] prefill execute tokens: 16173
+INFO 01-24 21:47:38,798 model_runner.py:258] prefill execute tokens: 16171
+INFO 01-24 21:47:38,938 model_runner.py:258] prefill execute tokens: 16031
+INFO 01-24 21:47:39,084 model_runner.py:258] prefill execute tokens: 16351
+INFO 01-24 21:47:39,233 model_runner.py:258] prefill execute tokens: 16085
+INFO 01-24 21:47:39,379 model_runner.py:258] prefill execute tokens: 15877
+INFO 01-24 21:47:39,517 model_runner.py:258] prefill execute tokens: 16365
+INFO 01-24 21:47:39,664 model_runner.py:258] prefill execute tokens: 13215
+INFO 01-24 21:47:39,785 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:39,807 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:39,829 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:39,851 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:39,873 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:39,895 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:39,917 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:39,939 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:39,961 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:39,983 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,005 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,027 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,049 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,070 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,092 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,114 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,136 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,158 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,180 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,202 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,224 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,246 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,268 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,290 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,312 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,334 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,356 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,378 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,400 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,422 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,444 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,466 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,489 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,511 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,533 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,556 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,578 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,600 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,622 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,644 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,667 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,689 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,711 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,733 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,756 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,778 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,801 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,823 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,846 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,868 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,891 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,913 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,935 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,957 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:40,980 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,002 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,024 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,047 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,069 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,091 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,113 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,136 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,158 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,180 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,203 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,225 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,247 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,270 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,292 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,314 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,337 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,359 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,382 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,404 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,426 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,449 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,471 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,493 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,516 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,538 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,561 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,583 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,606 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,628 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,651 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,673 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,695 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,718 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,740 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,763 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,785 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,808 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,830 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,853 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,875 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,898 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,920 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,943 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,966 model_runner.py:258] decode execute tokens: 256
+INFO 01-24 21:47:41,988 model_runner.py:258] decode execute tokens: 255
+INFO 01-24 21:47:42,011 model_runner.py:258] decode execute tokens: 254
+INFO 01-24 21:47:42,034 model_runner.py:258] decode execute tokens: 254
+INFO 01-24 21:47:42,056 model_runner.py:258] decode execute tokens: 254
+INFO 01-24 21:47:42,079 model_runner.py:258] decode execute tokens: 254
+INFO 01-24 21:47:42,102 model_runner.py:258] decode execute tokens: 254
+INFO 01-24 21:47:42,125 model_runner.py:258] decode execute tokens: 254
+INFO 01-24 21:47:42,147 model_runner.py:258] decode execute tokens: 253
+INFO 01-24 21:47:42,170 model_runner.py:258] decode execute tokens: 253
+INFO 01-24 21:47:42,193 model_runner.py:258] decode execute tokens: 252
+INFO 01-24 21:47:42,215 model_runner.py:258] decode execute tokens: 252
+INFO 01-24 21:47:42,238 model_runner.py:258] decode execute tokens: 252
+INFO 01-24 21:47:42,260 model_runner.py:258] decode execute tokens: 252
+INFO 01-24 21:47:42,282 model_runner.py:258] decode execute tokens: 252
+INFO 01-24 21:47:42,305 model_runner.py:258] decode execute tokens: 252
+INFO 01-24 21:47:42,327 model_runner.py:258] decode execute tokens: 252
+INFO 01-24 21:47:42,350 model_runner.py:258] decode execute tokens: 251
+INFO 01-24 21:47:42,372 model_runner.py:258] decode execute tokens: 251
+INFO 01-24 21:47:42,395 model_runner.py:258] decode execute tokens: 250
+INFO 01-24 21:47:42,417 model_runner.py:258] decode execute tokens: 250
+INFO 01-24 21:47:42,440 model_runner.py:258] decode execute tokens: 250
+INFO 01-24 21:47:42,462 model_runner.py:258] decode execute tokens: 249
+INFO 01-24 21:47:42,485 model_runner.py:258] decode execute tokens: 248
+INFO 01-24 21:47:42,507 model_runner.py:258] decode execute tokens: 247
+INFO 01-24 21:47:42,530 model_runner.py:258] decode execute tokens: 246
+INFO 01-24 21:47:42,552 model_runner.py:258] decode execute tokens: 246
+INFO 01-24 21:47:42,575 model_runner.py:258] decode execute tokens: 245
+INFO 01-24 21:47:42,597 model_runner.py:258] decode execute tokens: 244
+INFO 01-24 21:47:42,620 model_runner.py:258] decode execute tokens: 244
+INFO 01-24 21:47:42,642 model_runner.py:258] decode execute tokens: 243
+INFO 01-24 21:47:42,665 model_runner.py:258] decode execute tokens: 242
+INFO 01-24 21:47:42,687 model_runner.py:258] decode execute tokens: 241
+INFO 01-24 21:47:42,709 model_runner.py:258] decode execute tokens: 241
+INFO 01-24 21:47:42,731 model_runner.py:258] decode execute tokens: 241
+INFO 01-24 21:47:42,753 model_runner.py:258] decode execute tokens: 241
+INFO 01-24 21:47:42,775 model_runner.py:258] decode execute tokens: 240
+INFO 01-24 21:47:42,797 model_runner.py:258] decode execute tokens: 240
+INFO 01-24 21:47:42,820 model_runner.py:258] decode execute tokens: 240
+INFO 01-24 21:47:42,842 model_runner.py:258] decode execute tokens: 240
+INFO 01-24 21:47:42,864 model_runner.py:258] decode execute tokens: 240
+INFO 01-24 21:47:42,887 model_runner.py:258] decode execute tokens: 240
+INFO 01-24 21:47:42,909 model_runner.py:258] decode execute tokens: 240
+INFO 01-24 21:47:42,931 model_runner.py:258] decode execute tokens: 239
+INFO 01-24 21:47:42,953 model_runner.py:258] decode execute tokens: 239
+INFO 01-24 21:47:42,975 model_runner.py:258] decode execute tokens: 239
+INFO 01-24 21:47:42,997 model_runner.py:258] decode execute tokens: 238
+INFO 01-24 21:47:43,019 model_runner.py:258] decode execute tokens: 238
+INFO 01-24 21:47:43,041 model_runner.py:258] decode execute tokens: 237
+INFO 01-24 21:47:43,063 model_runner.py:258] decode execute tokens: 236
+INFO 01-24 21:47:43,085 model_runner.py:258] decode execute tokens: 236
+INFO 01-24 21:47:43,107 model_runner.py:258] decode execute tokens: 235
+INFO 01-24 21:47:43,129 model_runner.py:258] decode execute tokens: 235
+INFO 01-24 21:47:43,151 model_runner.py:258] decode execute tokens: 235
+INFO 01-24 21:47:43,173 model_runner.py:258] decode execute tokens: 235
+INFO 01-24 21:47:43,195 model_runner.py:258] decode execute tokens: 235
+INFO 01-24 21:47:43,217 model_runner.py:258] decode execute tokens: 235
+INFO 01-24 21:47:43,239 model_runner.py:258] decode execute tokens: 235
+INFO 01-24 21:47:43,262 model_runner.py:258] decode execute tokens: 235
+INFO 01-24 21:47:43,284 model_runner.py:258] decode execute tokens: 235
+INFO 01-24 21:47:43,306 model_runner.py:258] decode execute tokens: 234
+INFO 01-24 21:47:43,328 model_runner.py:258] decode execute tokens: 233
+INFO 01-24 21:47:43,350 model_runner.py:258] decode execute tokens: 233
+INFO 01-24 21:47:43,372 model_runner.py:258] decode execute tokens: 233
+INFO 01-24 21:47:43,395 model_runner.py:258] decode execute tokens: 232
+INFO 01-24 21:47:43,417 model_runner.py:258] decode execute tokens: 230
+INFO 01-24 21:47:43,438 model_runner.py:258] decode execute tokens: 230
+INFO 01-24 21:47:43,460 model_runner.py:258] decode execute tokens: 230
+INFO 01-24 21:47:43,482 model_runner.py:258] decode execute tokens: 230
+INFO 01-24 21:47:43,503 model_runner.py:258] decode execute tokens: 229
+INFO 01-24 21:47:43,525 model_runner.py:258] decode execute tokens: 227
+INFO 01-24 21:47:43,547 model_runner.py:258] decode execute tokens: 227
+INFO 01-24 21:47:43,569 model_runner.py:258] decode execute tokens: 226
+INFO 01-24 21:47:43,590 model_runner.py:258] decode execute tokens: 226
+INFO 01-24 21:47:43,612 model_runner.py:258] decode execute tokens: 225
+INFO 01-24 21:47:43,633 model_runner.py:258] decode execute tokens: 225
+INFO 01-24 21:47:43,655 model_runner.py:258] decode execute tokens: 225
+INFO 01-24 21:47:43,676 model_runner.py:258] decode execute tokens: 225
+INFO 01-24 21:47:43,698 model_runner.py:258] decode execute tokens: 223
+INFO 01-24 21:47:43,719 model_runner.py:258] decode execute tokens: 223
+INFO 01-24 21:47:43,741 model_runner.py:258] decode execute tokens: 223
+INFO 01-24 21:47:43,762 model_runner.py:258] decode execute tokens: 223
+INFO 01-24 21:47:43,784 model_runner.py:258] decode execute tokens: 222
+INFO 01-24 21:47:43,805 model_runner.py:258] decode execute tokens: 222
+INFO 01-24 21:47:43,827 model_runner.py:258] decode execute tokens: 222
+INFO 01-24 21:47:43,848 model_runner.py:258] decode execute tokens: 222
+INFO 01-24 21:47:43,869 model_runner.py:258] decode execute tokens: 222
+INFO 01-24 21:47:43,891 model_runner.py:258] decode execute tokens: 222
+INFO 01-24 21:47:43,913 model_runner.py:258] decode execute tokens: 222
+INFO 01-24 21:47:43,934 model_runner.py:258] decode execute tokens: 222
+INFO 01-24 21:47:43,956 model_runner.py:258] decode execute tokens: 222
+INFO 01-24 21:47:43,977 model_runner.py:258] decode execute tokens: 222
+INFO 01-24 21:47:43,999 model_runner.py:258] decode execute tokens: 221
+INFO 01-24 21:47:44,021 model_runner.py:258] decode execute tokens: 220
+INFO 01-24 21:47:44,043 model_runner.py:258] decode execute tokens: 220
+INFO 01-24 21:47:44,065 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,086 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,107 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,129 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,150 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,171 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,192 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,213 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,235 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,256 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,277 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,299 model_runner.py:258] decode execute tokens: 218
+INFO 01-24 21:47:44,320 model_runner.py:258] decode execute tokens: 217
+INFO 01-24 21:47:44,342 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,363 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,384 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,406 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,427 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,448 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,469 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,491 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,512 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,533 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,554 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,576 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,597 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,618 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,640 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,661 model_runner.py:258] decode execute tokens: 216
+INFO 01-24 21:47:44,683 model_runner.py:258] decode execute tokens: 215
+INFO 01-24 21:47:44,704 model_runner.py:258] decode execute tokens: 215
+INFO 01-24 21:47:44,726 model_runner.py:258] decode execute tokens: 214
+INFO 01-24 21:47:44,747 model_runner.py:258] decode execute tokens: 214
+INFO 01-24 21:47:44,769 model_runner.py:258] decode execute tokens: 213
+INFO 01-24 21:47:44,790 model_runner.py:258] decode execute tokens: 213
+INFO 01-24 21:47:44,811 model_runner.py:258] decode execute tokens: 213
+INFO 01-24 21:47:44,832 model_runner.py:258] decode execute tokens: 213
+INFO 01-24 21:47:44,853 model_runner.py:258] decode execute tokens: 213
+INFO 01-24 21:47:44,875 model_runner.py:258] decode execute tokens: 212
+INFO 01-24 21:47:44,897 model_runner.py:258] decode execute tokens: 212
+INFO 01-24 21:47:44,918 model_runner.py:258] decode execute tokens: 211
+INFO 01-24 21:47:44,940 model_runner.py:258] decode execute tokens: 211
+INFO 01-24 21:47:44,961 model_runner.py:258] decode execute tokens: 210
+INFO 01-24 21:47:44,983 model_runner.py:258] decode execute tokens: 210
+INFO 01-24 21:47:45,004 model_runner.py:258] decode execute tokens: 210
+INFO 01-24 21:47:45,026 model_runner.py:258] decode execute tokens: 208
+INFO 01-24 21:47:45,047 model_runner.py:258] decode execute tokens: 208
+INFO 01-24 21:47:45,068 model_runner.py:258] decode execute tokens: 208
+INFO 01-24 21:47:45,090 model_runner.py:258] decode execute tokens: 208
+INFO 01-24 21:47:45,112 model_runner.py:258] decode execute tokens: 208
+INFO 01-24 21:47:45,133 model_runner.py:258] decode execute tokens: 207
+INFO 01-24 21:47:45,155 model_runner.py:258] decode execute tokens: 207
+INFO 01-24 21:47:45,176 model_runner.py:258] decode execute tokens: 206
+INFO 01-24 21:47:45,198 model_runner.py:258] decode execute tokens: 205
+INFO 01-24 21:47:45,219 model_runner.py:258] decode execute tokens: 204
+INFO 01-24 21:47:45,239 model_runner.py:258] decode execute tokens: 204
+INFO 01-24 21:47:45,260 model_runner.py:258] decode execute tokens: 203
+INFO 01-24 21:47:45,281 model_runner.py:258] decode execute tokens: 203
+INFO 01-24 21:47:45,302 model_runner.py:258] decode execute tokens: 203
+INFO 01-24 21:47:45,323 model_runner.py:258] decode execute tokens: 202
+INFO 01-24 21:47:45,344 model_runner.py:258] decode execute tokens: 202
+INFO 01-24 21:47:45,364 model_runner.py:258] decode execute tokens: 200
+INFO 01-24 21:47:45,385 model_runner.py:258] decode execute tokens: 199
+INFO 01-24 21:47:45,406 model_runner.py:258] decode execute tokens: 199
+INFO 01-24 21:47:45,427 model_runner.py:258] decode execute tokens: 199
+INFO 01-24 21:47:45,448 model_runner.py:258] decode execute tokens: 199
+INFO 01-24 21:47:45,469 model_runner.py:258] decode execute tokens: 198
+INFO 01-24 21:47:45,489 model_runner.py:258] decode execute tokens: 198
+INFO 01-24 21:47:45,510 model_runner.py:258] decode execute tokens: 197
+INFO 01-24 21:47:45,531 model_runner.py:258] decode execute tokens: 197
+INFO 01-24 21:47:45,552 model_runner.py:258] decode execute tokens: 197
+INFO 01-24 21:47:45,572 model_runner.py:258] decode execute tokens: 197
+INFO 01-24 21:47:45,593 model_runner.py:258] decode execute tokens: 197
+INFO 01-24 21:47:45,614 model_runner.py:258] decode execute tokens: 196
+INFO 01-24 21:47:45,635 model_runner.py:258] decode execute tokens: 196
+INFO 01-24 21:47:45,656 model_runner.py:258] decode execute tokens: 196
+INFO 01-24 21:47:45,677 model_runner.py:258] decode execute tokens: 196
+INFO 01-24 21:47:45,697 model_runner.py:258] decode execute tokens: 196
+INFO 01-24 21:47:45,718 model_runner.py:258] decode execute tokens: 196
+INFO 01-24 21:47:45,739 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,760 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,781 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,802 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,822 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,843 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,864 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,885 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,906 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,927 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,948 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,969 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:45,990 model_runner.py:258] decode execute tokens: 195
+INFO 01-24 21:47:46,011 model_runner.py:258] decode execute tokens: 194
+INFO 01-24 21:47:46,032 model_runner.py:258] decode execute tokens: 194
+INFO 01-24 21:47:46,053 model_runner.py:258] decode execute tokens: 194
+INFO 01-24 21:47:46,074 model_runner.py:258] decode execute tokens: 194
+INFO 01-24 21:47:46,094 model_runner.py:258] decode execute tokens: 194
+INFO 01-24 21:47:46,115 model_runner.py:258] decode execute tokens: 194
+INFO 01-24 21:47:46,136 model_runner.py:258] decode execute tokens: 194
+INFO 01-24 21:47:46,157 model_runner.py:258] decode execute tokens: 194
+INFO 01-24 21:47:46,178 model_runner.py:258] decode execute tokens: 193
+INFO 01-24 21:47:46,199 model_runner.py:258] decode execute tokens: 192
+INFO 01-24 21:47:46,220 model_runner.py:258] decode execute tokens: 192
+INFO 01-24 21:47:46,240 model_runner.py:258] decode execute tokens: 192
+INFO 01-24 21:47:46,261 model_runner.py:258] decode execute tokens: 192
+INFO 01-24 21:47:46,281 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,302 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,322 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,342 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,363 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,384 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,404 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,425 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,445 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,466 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,486 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,507 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,527 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,548 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,568 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,589 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,610 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,630 model_runner.py:258] decode execute tokens: 191
+INFO 01-24 21:47:46,651 model_runner.py:258] decode execute tokens: 190
+INFO 01-24 21:47:46,671 model_runner.py:258] decode execute tokens: 189
+INFO 01-24 21:47:46,692 model_runner.py:258] decode execute tokens: 189
+INFO 01-24 21:47:46,712 model_runner.py:258] decode execute tokens: 189
+INFO 01-24 21:47:46,733 model_runner.py:258] decode execute tokens: 189
+INFO 01-24 21:47:46,754 model_runner.py:258] decode execute tokens: 189
+INFO 01-24 21:47:46,774 model_runner.py:258] decode execute tokens: 189
+INFO 01-24 21:47:46,795 model_runner.py:258] decode execute tokens: 189
+INFO 01-24 21:47:46,816 model_runner.py:258] decode execute tokens: 189
+INFO 01-24 21:47:46,837 model_runner.py:258] decode execute tokens: 189
+INFO 01-24 21:47:46,857 model_runner.py:258] decode execute tokens: 189
+INFO 01-24 21:47:46,878 model_runner.py:258] decode execute tokens: 189
+INFO 01-24 21:47:46,898 model_runner.py:258] decode execute tokens: 188
+INFO 01-24 21:47:46,919 model_runner.py:258] decode execute tokens: 188
+INFO 01-24 21:47:46,939 model_runner.py:258] decode execute tokens: 187
+INFO 01-24 21:47:46,960 model_runner.py:258] decode execute tokens: 186
+INFO 01-24 21:47:46,981 model_runner.py:258] decode execute tokens: 186
+INFO 01-24 21:47:47,001 model_runner.py:258] decode execute tokens: 185
+INFO 01-24 21:47:47,022 model_runner.py:258] decode execute tokens: 185
+INFO 01-24 21:47:47,042 model_runner.py:258] decode execute tokens: 185
+INFO 01-24 21:47:47,063 model_runner.py:258] decode execute tokens: 185
+INFO 01-24 21:47:47,083 model_runner.py:258] decode execute tokens: 185
+INFO 01-24 21:47:47,104 model_runner.py:258] decode execute tokens: 185
+INFO 01-24 21:47:47,124 model_runner.py:258] decode execute tokens: 184
+INFO 01-24 21:47:47,145 model_runner.py:258] decode execute tokens: 183
+INFO 01-24 21:47:47,165 model_runner.py:258] decode execute tokens: 183
+INFO 01-24 21:47:47,185 model_runner.py:258] decode execute tokens: 183
+INFO 01-24 21:47:47,206 model_runner.py:258] decode execute tokens: 182
+INFO 01-24 21:47:47,226 model_runner.py:258] decode execute tokens: 182
+INFO 01-24 21:47:47,247 model_runner.py:258] decode execute tokens: 182
+INFO 01-24 21:47:47,267 model_runner.py:258] decode execute tokens: 182
+INFO 01-24 21:47:47,288 model_runner.py:258] decode execute tokens: 182
+INFO 01-24 21:47:47,308 model_runner.py:258] decode execute tokens: 182
+INFO 01-24 21:47:47,328 model_runner.py:258] decode execute tokens: 182
+INFO 01-24 21:47:47,349 model_runner.py:258] decode execute tokens: 182
+INFO 01-24 21:47:47,369 model_runner.py:258] decode execute tokens: 181
+INFO 01-24 21:47:47,390 model_runner.py:258] decode execute tokens: 181
+INFO 01-24 21:47:47,410 model_runner.py:258] decode execute tokens: 181
+INFO 01-24 21:47:47,431 model_runner.py:258] decode execute tokens: 181
+INFO 01-24 21:47:47,451 model_runner.py:258] decode execute tokens: 181
+INFO 01-24 21:47:47,472 model_runner.py:258] decode execute tokens: 181
+INFO 01-24 21:47:47,492 model_runner.py:258] decode execute tokens: 181
+INFO 01-24 21:47:47,513 model_runner.py:258] decode execute tokens: 181
+INFO 01-24 21:47:47,533 model_runner.py:258] decode execute tokens: 181
+INFO 01-24 21:47:47,554 model_runner.py:258] decode execute tokens: 181
+INFO 01-24 21:47:47,574 model_runner.py:258] decode execute tokens: 181
+INFO 01-24 21:47:47,594 model_runner.py:258] decode execute tokens: 180
+INFO 01-24 21:47:47,615 model_runner.py:258] decode execute tokens: 179
+INFO 01-24 21:47:47,635 model_runner.py:258] decode execute tokens: 179
+INFO 01-24 21:47:47,655 model_runner.py:258] decode execute tokens: 179
+INFO 01-24 21:47:47,675 model_runner.py:258] decode execute tokens: 179
+INFO 01-24 21:47:47,695 model_runner.py:258] decode execute tokens: 179
+INFO 01-24 21:47:47,715 model_runner.py:258] decode execute tokens: 179
+INFO 01-24 21:47:47,735 model_runner.py:258] decode execute tokens: 179
+INFO 01-24 21:47:47,756 model_runner.py:258] decode execute tokens: 178
+INFO 01-24 21:47:47,776 model_runner.py:258] decode execute tokens: 178
+INFO 01-24 21:47:47,796 model_runner.py:258] decode execute tokens: 178
+INFO 01-24 21:47:47,816 model_runner.py:258] decode execute tokens: 178
+INFO 01-24 21:47:47,836 model_runner.py:258] decode execute tokens: 178
+INFO 01-24 21:47:47,857 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:47,877 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:47,897 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:47,917 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:47,937 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:47,957 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:47,978 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:47,998 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,018 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,038 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,058 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,079 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,099 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,119 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,139 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,159 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,180 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,200 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,220 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,240 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,261 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,281 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,301 model_runner.py:258] decode execute tokens: 177
+INFO 01-24 21:47:48,321 model_runner.py:258] decode execute tokens: 176
+INFO 01-24 21:47:48,341 model_runner.py:258] decode execute tokens: 175
+INFO 01-24 21:47:48,361 model_runner.py:258] decode execute tokens: 175
+INFO 01-24 21:47:48,382 model_runner.py:258] decode execute tokens: 175
+INFO 01-24 21:47:48,402 model_runner.py:258] decode execute tokens: 175
+INFO 01-24 21:47:48,422 model_runner.py:258] decode execute tokens: 175
+INFO 01-24 21:47:48,442 model_runner.py:258] decode execute tokens: 174
+INFO 01-24 21:47:48,462 model_runner.py:258] decode execute tokens: 174
+INFO 01-24 21:47:48,482 model_runner.py:258] decode execute tokens: 174
+INFO 01-24 21:47:48,502 model_runner.py:258] decode execute tokens: 173
+INFO 01-24 21:47:48,522 model_runner.py:258] decode execute tokens: 172
+INFO 01-24 21:47:48,542 model_runner.py:258] decode execute tokens: 172
+INFO 01-24 21:47:48,562 model_runner.py:258] decode execute tokens: 172
+INFO 01-24 21:47:48,582 model_runner.py:258] decode execute tokens: 172
+INFO 01-24 21:47:48,602 model_runner.py:258] decode execute tokens: 172
+INFO 01-24 21:47:48,622 model_runner.py:258] decode execute tokens: 172
+INFO 01-24 21:47:48,642 model_runner.py:258] decode execute tokens: 172
+INFO 01-24 21:47:48,663 model_runner.py:258] decode execute tokens: 172
+INFO 01-24 21:47:48,683 model_runner.py:258] decode execute tokens: 172
+INFO 01-24 21:47:48,703 model_runner.py:258] decode execute tokens: 172
+INFO 01-24 21:47:48,723 model_runner.py:258] decode execute tokens: 171
+INFO 01-24 21:47:48,743 model_runner.py:258] decode execute tokens: 170
+INFO 01-24 21:47:48,763 model_runner.py:258] decode execute tokens: 169
+INFO 01-24 21:47:48,783 model_runner.py:258] decode execute tokens: 166
+INFO 01-24 21:47:48,803 model_runner.py:258] decode execute tokens: 166
+INFO 01-24 21:47:48,824 model_runner.py:258] decode execute tokens: 166
+INFO 01-24 21:47:48,843 model_runner.py:258] decode execute tokens: 166
+INFO 01-24 21:47:48,863 model_runner.py:258] decode execute tokens: 164
+INFO 01-24 21:47:48,883 model_runner.py:258] decode execute tokens: 163
+INFO 01-24 21:47:48,903 model_runner.py:258] decode execute tokens: 163
+INFO 01-24 21:47:48,923 model_runner.py:258] decode execute tokens: 163
+INFO 01-24 21:47:48,942 model_runner.py:258] decode execute tokens: 162
+INFO 01-24 21:47:48,962 model_runner.py:258] decode execute tokens: 162
+INFO 01-24 21:47:48,982 model_runner.py:258] decode execute tokens: 162
+INFO 01-24 21:47:49,001 model_runner.py:258] decode execute tokens: 162
+INFO 01-24 21:47:49,021 model_runner.py:258] decode execute tokens: 162
+INFO 01-24 21:47:49,041 model_runner.py:258] decode execute tokens: 162
+INFO 01-24 21:47:49,061 model_runner.py:258] decode execute tokens: 162
+INFO 01-24 21:47:49,080 model_runner.py:258] decode execute tokens: 162
+INFO 01-24 21:47:49,100 model_runner.py:258] decode execute tokens: 161
+INFO 01-24 21:47:49,120 model_runner.py:258] decode execute tokens: 161
+INFO 01-24 21:47:49,139 model_runner.py:258] decode execute tokens: 161
+INFO 01-24 21:47:49,159 model_runner.py:258] decode execute tokens: 160
+INFO 01-24 21:47:49,179 model_runner.py:258] decode execute tokens: 160
+INFO 01-24 21:47:49,198 model_runner.py:258] decode execute tokens: 160
+INFO 01-24 21:47:49,218 model_runner.py:258] decode execute tokens: 160
+INFO 01-24 21:47:49,238 model_runner.py:258] decode execute tokens: 160
+INFO 01-24 21:47:49,258 model_runner.py:258] decode execute tokens: 160
+INFO 01-24 21:47:49,277 model_runner.py:258] decode execute tokens: 160
+INFO 01-24 21:47:49,297 model_runner.py:258] decode execute tokens: 160
+INFO 01-24 21:47:49,317 model_runner.py:258] decode execute tokens: 159
+INFO 01-24 21:47:49,337 model_runner.py:258] decode execute tokens: 158
+INFO 01-24 21:47:49,356 model_runner.py:258] decode execute tokens: 158
+INFO 01-24 21:47:49,376 model_runner.py:258] decode execute tokens: 158
+INFO 01-24 21:47:49,396 model_runner.py:258] decode execute tokens: 158
+INFO 01-24 21:47:49,415 model_runner.py:258] decode execute tokens: 158
+INFO 01-24 21:47:49,435 model_runner.py:258] decode execute tokens: 157
+INFO 01-24 21:47:49,455 model_runner.py:258] decode execute tokens: 157
+INFO 01-24 21:47:49,475 model_runner.py:258] decode execute tokens: 156
+INFO 01-24 21:47:49,494 model_runner.py:258] decode execute tokens: 155
+INFO 01-24 21:47:49,514 model_runner.py:258] decode execute tokens: 154
+INFO 01-24 21:47:49,533 model_runner.py:258] decode execute tokens: 154
+INFO 01-24 21:47:49,552 model_runner.py:258] decode execute tokens: 154
+INFO 01-24 21:47:49,572 model_runner.py:258] decode execute tokens: 154
+INFO 01-24 21:47:49,591 model_runner.py:258] decode execute tokens: 153
+INFO 01-24 21:47:49,610 model_runner.py:258] decode execute tokens: 153
+INFO 01-24 21:47:49,629 model_runner.py:258] decode execute tokens: 153
+INFO 01-24 21:47:49,649 model_runner.py:258] decode execute tokens: 153
+INFO 01-24 21:47:49,668 model_runner.py:258] decode execute tokens: 153
+INFO 01-24 21:47:49,687 model_runner.py:258] decode execute tokens: 153
+INFO 01-24 21:47:49,706 model_runner.py:258] decode execute tokens: 153
+INFO 01-24 21:47:49,726 model_runner.py:258] decode execute tokens: 152
+INFO 01-24 21:47:49,745 model_runner.py:258] decode execute tokens: 152
+INFO 01-24 21:47:49,764 model_runner.py:258] decode execute tokens: 152
+INFO 01-24 21:47:49,783 model_runner.py:258] decode execute tokens: 152
+INFO 01-24 21:47:49,803 model_runner.py:258] decode execute tokens: 152
+INFO 01-24 21:47:49,822 model_runner.py:258] decode execute tokens: 152
+INFO 01-24 21:47:49,841 model_runner.py:258] decode execute tokens: 152
+INFO 01-24 21:47:49,861 model_runner.py:258] decode execute tokens: 151
+INFO 01-24 21:47:49,881 model_runner.py:258] decode execute tokens: 151
+INFO 01-24 21:47:49,900 model_runner.py:258] decode execute tokens: 151
+INFO 01-24 21:47:49,919 model_runner.py:258] decode execute tokens: 151
+INFO 01-24 21:47:49,939 model_runner.py:258] decode execute tokens: 150
+INFO 01-24 21:47:49,958 model_runner.py:258] decode execute tokens: 150
+INFO 01-24 21:47:49,977 model_runner.py:258] decode execute tokens: 149
+INFO 01-24 21:47:49,997 model_runner.py:258] decode execute tokens: 149
+INFO 01-24 21:47:50,016 model_runner.py:258] decode execute tokens: 149
+INFO 01-24 21:47:50,036 model_runner.py:258] decode execute tokens: 149
+INFO 01-24 21:47:50,055 model_runner.py:258] decode execute tokens: 149
+INFO 01-24 21:47:50,074 model_runner.py:258] decode execute tokens: 149
+INFO 01-24 21:47:50,093 model_runner.py:258] decode execute tokens: 149
+INFO 01-24 21:47:50,113 model_runner.py:258] decode execute tokens: 149
+INFO 01-24 21:47:50,132 model_runner.py:258] decode execute tokens: 149
+INFO 01-24 21:47:50,151 model_runner.py:258] decode execute tokens: 149
+INFO 01-24 21:47:50,171 model_runner.py:258] decode execute tokens: 149
+INFO 01-24 21:47:50,190 model_runner.py:258] decode execute tokens: 148
+INFO 01-24 21:47:50,209 model_runner.py:258] decode execute tokens: 148
+INFO 01-24 21:47:50,229 model_runner.py:258] decode execute tokens: 148
+INFO 01-24 21:47:50,248 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,268 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,287 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,306 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,326 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,345 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,365 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,384 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,404 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,423 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,443 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,462 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,482 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,502 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,521 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,541 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,561 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,580 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,599 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,619 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,638 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,658 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,677 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,697 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,716 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,736 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,755 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,775 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,794 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,814 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,833 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,853 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,872 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,892 model_runner.py:258] decode execute tokens: 147
+INFO 01-24 21:47:50,911 model_runner.py:258] decode execute tokens: 145
+INFO 01-24 21:47:50,931 model_runner.py:258] decode execute tokens: 145
+INFO 01-24 21:47:50,950 model_runner.py:258] decode execute tokens: 145
+INFO 01-24 21:47:50,969 model_runner.py:258] decode execute tokens: 145
+INFO 01-24 21:47:50,989 model_runner.py:258] decode execute tokens: 145
+INFO 01-24 21:47:51,008 model_runner.py:258] decode execute tokens: 144
+INFO 01-24 21:47:51,027 model_runner.py:258] decode execute tokens: 143
+INFO 01-24 21:47:51,046 model_runner.py:258] decode execute tokens: 143
+INFO 01-24 21:47:51,065 model_runner.py:258] decode execute tokens: 143
+INFO 01-24 21:47:51,083 model_runner.py:258] decode execute tokens: 143
+INFO 01-24 21:47:51,102 model_runner.py:258] decode execute tokens: 141
+INFO 01-24 21:47:51,121 model_runner.py:258] decode execute tokens: 140
+INFO 01-24 21:47:51,140 model_runner.py:258] decode execute tokens: 140
+INFO 01-24 21:47:51,158 model_runner.py:258] decode execute tokens: 140
+INFO 01-24 21:47:51,177 model_runner.py:258] decode execute tokens: 140
+INFO 01-24 21:47:51,196 model_runner.py:258] decode execute tokens: 140
+INFO 01-24 21:47:51,214 model_runner.py:258] decode execute tokens: 140
+INFO 01-24 21:47:51,233 model_runner.py:258] decode execute tokens: 140
+INFO 01-24 21:47:51,252 model_runner.py:258] decode execute tokens: 140
+INFO 01-24 21:47:51,270 model_runner.py:258] decode execute tokens: 138
+INFO 01-24 21:47:51,289 model_runner.py:258] decode execute tokens: 138
+INFO 01-24 21:47:51,308 model_runner.py:258] decode execute tokens: 138
+INFO 01-24 21:47:51,327 model_runner.py:258] decode execute tokens: 137
+INFO 01-24 21:47:51,345 model_runner.py:258] decode execute tokens: 137
+INFO 01-24 21:47:51,364 model_runner.py:258] decode execute tokens: 136
+INFO 01-24 21:47:51,383 model_runner.py:258] decode execute tokens: 136
+INFO 01-24 21:47:51,402 model_runner.py:258] decode execute tokens: 134
+INFO 01-24 21:47:51,421 model_runner.py:258] decode execute tokens: 134
+INFO 01-24 21:47:51,440 model_runner.py:258] decode execute tokens: 134
+INFO 01-24 21:47:51,458 model_runner.py:258] decode execute tokens: 134
+INFO 01-24 21:47:51,477 model_runner.py:258] decode execute tokens: 134
+INFO 01-24 21:47:51,496 model_runner.py:258] decode execute tokens: 133
+INFO 01-24 21:47:51,515 model_runner.py:258] decode execute tokens: 133
+INFO 01-24 21:47:51,533 model_runner.py:258] decode execute tokens: 133
+INFO 01-24 21:47:51,552 model_runner.py:258] decode execute tokens: 133
+INFO 01-24 21:47:51,571 model_runner.py:258] decode execute tokens: 133
+INFO 01-24 21:47:51,590 model_runner.py:258] decode execute tokens: 132
+INFO 01-24 21:47:51,608 model_runner.py:258] decode execute tokens: 132
+INFO 01-24 21:47:51,627 model_runner.py:258] decode execute tokens: 131
+INFO 01-24 21:47:51,645 model_runner.py:258] decode execute tokens: 131
+INFO 01-24 21:47:51,664 model_runner.py:258] decode execute tokens: 131
+INFO 01-24 21:47:51,682 model_runner.py:258] decode execute tokens: 131
+INFO 01-24 21:47:51,700 model_runner.py:258] decode execute tokens: 131
+INFO 01-24 21:47:51,719 model_runner.py:258] decode execute tokens: 131
+INFO 01-24 21:47:51,737 model_runner.py:258] decode execute tokens: 131
+INFO 01-24 21:47:51,756 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,774 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,793 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,811 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,829 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,848 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,866 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,884 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,902 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,921 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,939 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,957 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,976 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:51,994 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:52,013 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:52,031 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:52,050 model_runner.py:258] decode execute tokens: 130
+INFO 01-24 21:47:52,068 model_runner.py:258] decode execute tokens: 129
+INFO 01-24 21:47:52,087 model_runner.py:258] decode execute tokens: 128
+INFO 01-24 21:47:52,105 model_runner.py:258] decode execute tokens: 128
+INFO 01-24 21:47:52,124 model_runner.py:258] decode execute tokens: 128
+INFO 01-24 21:47:52,142 model_runner.py:258] decode execute tokens: 128
+INFO 01-24 21:47:52,161 model_runner.py:258] decode execute tokens: 128
+INFO 01-24 21:47:52,179 model_runner.py:258] decode execute tokens: 128
+INFO 01-24 21:47:52,197 model_runner.py:258] decode execute tokens: 127
+INFO 01-24 21:47:52,216 model_runner.py:258] decode execute tokens: 126
+INFO 01-24 21:47:52,234 model_runner.py:258] decode execute tokens: 123
+INFO 01-24 21:47:52,252 model_runner.py:258] decode execute tokens: 123
+INFO 01-24 21:47:52,270 model_runner.py:258] decode execute tokens: 123
+INFO 01-24 21:47:52,289 model_runner.py:258] decode execute tokens: 121
+INFO 01-24 21:47:52,307 model_runner.py:258] decode execute tokens: 121
+INFO 01-24 21:47:52,325 model_runner.py:258] decode execute tokens: 121
+INFO 01-24 21:47:52,343 model_runner.py:258] decode execute tokens: 121
+INFO 01-24 21:47:52,361 model_runner.py:258] decode execute tokens: 121
+INFO 01-24 21:47:52,378 model_runner.py:258] decode execute tokens: 121
+INFO 01-24 21:47:52,396 model_runner.py:258] decode execute tokens: 121
+INFO 01-24 21:47:52,414 model_runner.py:258] decode execute tokens: 121
+INFO 01-24 21:47:52,433 model_runner.py:258] decode execute tokens: 120
+INFO 01-24 21:47:52,451 model_runner.py:258] decode execute tokens: 119
+INFO 01-24 21:47:52,468 model_runner.py:258] decode execute tokens: 118
+INFO 01-24 21:47:52,486 model_runner.py:258] decode execute tokens: 116
+INFO 01-24 21:47:52,504 model_runner.py:258] decode execute tokens: 116
+INFO 01-24 21:47:52,521 model_runner.py:258] decode execute tokens: 116
+INFO 01-24 21:47:52,539 model_runner.py:258] decode execute tokens: 116
+INFO 01-24 21:47:52,557 model_runner.py:258] decode execute tokens: 116
+INFO 01-24 21:47:52,575 model_runner.py:258] decode execute tokens: 116
+INFO 01-24 21:47:52,592 model_runner.py:258] decode execute tokens: 116
+INFO 01-24 21:47:52,610 model_runner.py:258] decode execute tokens: 116
+INFO 01-24 21:47:52,628 model_runner.py:258] decode execute tokens: 115
+INFO 01-24 21:47:52,646 model_runner.py:258] decode execute tokens: 115
+INFO 01-24 21:47:52,663 model_runner.py:258] decode execute tokens: 115
+INFO 01-24 21:47:52,681 model_runner.py:258] decode execute tokens: 115
+INFO 01-24 21:47:52,699 model_runner.py:258] decode execute tokens: 115
+INFO 01-24 21:47:52,716 model_runner.py:258] decode execute tokens: 114
+INFO 01-24 21:47:52,734 model_runner.py:258] decode execute tokens: 114
+INFO 01-24 21:47:52,752 model_runner.py:258] decode execute tokens: 113
+INFO 01-24 21:47:52,770 model_runner.py:258] decode execute tokens: 111
+INFO 01-24 21:47:52,788 model_runner.py:258] decode execute tokens: 111
+INFO 01-24 21:47:52,805 model_runner.py:258] decode execute tokens: 111
+INFO 01-24 21:47:52,823 model_runner.py:258] decode execute tokens: 110
+INFO 01-24 21:47:52,841 model_runner.py:258] decode execute tokens: 110
+INFO 01-24 21:47:52,859 model_runner.py:258] decode execute tokens: 110
+INFO 01-24 21:47:52,876 model_runner.py:258] decode execute tokens: 109
+INFO 01-24 21:47:52,894 model_runner.py:258] decode execute tokens: 109
+INFO 01-24 21:47:52,912 model_runner.py:258] decode execute tokens: 108
+INFO 01-24 21:47:52,929 model_runner.py:258] decode execute tokens: 107
+INFO 01-24 21:47:52,946 model_runner.py:258] decode execute tokens: 107
+INFO 01-24 21:47:52,964 model_runner.py:258] decode execute tokens: 106
+INFO 01-24 21:47:52,981 model_runner.py:258] decode execute tokens: 106
+INFO 01-24 21:47:52,998 model_runner.py:258] decode execute tokens: 106
+INFO 01-24 21:47:53,015 model_runner.py:258] decode execute tokens: 106
+INFO 01-24 21:47:53,032 model_runner.py:258] decode execute tokens: 106
+INFO 01-24 21:47:53,049 model_runner.py:258] decode execute tokens: 105
+INFO 01-24 21:47:53,066 model_runner.py:258] decode execute tokens: 105
+INFO 01-24 21:47:53,083 model_runner.py:258] decode execute tokens: 105
+INFO 01-24 21:47:53,100 model_runner.py:258] decode execute tokens: 105
+INFO 01-24 21:47:53,117 model_runner.py:258] decode execute tokens: 105
+INFO 01-24 21:47:53,134 model_runner.py:258] decode execute tokens: 105
+INFO 01-24 21:47:53,151 model_runner.py:258] decode execute tokens: 105
+INFO 01-24 21:47:53,169 model_runner.py:258] decode execute tokens: 104
+INFO 01-24 21:47:53,186 model_runner.py:258] decode execute tokens: 102
+INFO 01-24 21:47:53,203 model_runner.py:258] decode execute tokens: 102
+INFO 01-24 21:47:53,220 model_runner.py:258] decode execute tokens: 102
+INFO 01-24 21:47:53,237 model_runner.py:258] decode execute tokens: 102
+INFO 01-24 21:47:53,254 model_runner.py:258] decode execute tokens: 102
+INFO 01-24 21:47:53,271 model_runner.py:258] decode execute tokens: 101
+INFO 01-24 21:47:53,288 model_runner.py:258] decode execute tokens: 101
+INFO 01-24 21:47:53,305 model_runner.py:258] decode execute tokens: 101
+INFO 01-24 21:47:53,322 model_runner.py:258] decode execute tokens: 101
+INFO 01-24 21:47:53,339 model_runner.py:258] decode execute tokens: 100
+INFO 01-24 21:47:53,356 model_runner.py:258] decode execute tokens: 100
+INFO 01-24 21:47:53,373 model_runner.py:258] decode execute tokens: 100
+INFO 01-24 21:47:53,390 model_runner.py:258] decode execute tokens: 100
+INFO 01-24 21:47:53,407 model_runner.py:258] decode execute tokens: 100
+INFO 01-24 21:47:53,424 model_runner.py:258] decode execute tokens: 100
+INFO 01-24 21:47:53,441 model_runner.py:258] decode execute tokens: 99
+INFO 01-24 21:47:53,458 model_runner.py:258] decode execute tokens: 99
+INFO 01-24 21:47:53,475 model_runner.py:258] decode execute tokens: 99
+INFO 01-24 21:47:53,492 model_runner.py:258] decode execute tokens: 99
+INFO 01-24 21:47:53,509 model_runner.py:258] decode execute tokens: 99
+INFO 01-24 21:47:53,526 model_runner.py:258] decode execute tokens: 99
+INFO 01-24 21:47:53,543 model_runner.py:258] decode execute tokens: 98
+INFO 01-24 21:47:53,560 model_runner.py:258] decode execute tokens: 97
+INFO 01-24 21:47:53,577 model_runner.py:258] decode execute tokens: 97
+INFO 01-24 21:47:53,594 model_runner.py:258] decode execute tokens: 97
+INFO 01-24 21:47:53,611 model_runner.py:258] decode execute tokens: 97
+INFO 01-24 21:47:53,628 model_runner.py:258] decode execute tokens: 97
+INFO 01-24 21:47:53,645 model_runner.py:258] decode execute tokens: 97
+INFO 01-24 21:47:53,662 model_runner.py:258] decode execute tokens: 96
+INFO 01-24 21:47:53,679 model_runner.py:258] decode execute tokens: 96
+INFO 01-24 21:47:53,695 model_runner.py:258] decode execute tokens: 96
+INFO 01-24 21:47:53,712 model_runner.py:258] decode execute tokens: 96
+INFO 01-24 21:47:53,728 model_runner.py:258] decode execute tokens: 95
+INFO 01-24 21:47:53,745 model_runner.py:258] decode execute tokens: 95
+INFO 01-24 21:47:53,762 model_runner.py:258] decode execute tokens: 93
+INFO 01-24 21:47:53,778 model_runner.py:258] decode execute tokens: 93
+INFO 01-24 21:47:53,795 model_runner.py:258] decode execute tokens: 91
+INFO 01-24 21:47:53,811 model_runner.py:258] decode execute tokens: 91
+INFO 01-24 21:47:53,827 model_runner.py:258] decode execute tokens: 91
+INFO 01-24 21:47:53,843 model_runner.py:258] decode execute tokens: 91
+INFO 01-24 21:47:53,860 model_runner.py:258] decode execute tokens: 90
+INFO 01-24 21:47:53,876 model_runner.py:258] decode execute tokens: 90
+INFO 01-24 21:47:53,892 model_runner.py:258] decode execute tokens: 90
+INFO 01-24 21:47:53,909 model_runner.py:258] decode execute tokens: 90
+INFO 01-24 21:47:53,925 model_runner.py:258] decode execute tokens: 90
+INFO 01-24 21:47:53,942 model_runner.py:258] decode execute tokens: 89
+INFO 01-24 21:47:53,958 model_runner.py:258] decode execute tokens: 89
+INFO 01-24 21:47:53,974 model_runner.py:258] decode execute tokens: 89
+INFO 01-24 21:47:53,991 model_runner.py:258] decode execute tokens: 89
+INFO 01-24 21:47:54,007 model_runner.py:258] decode execute tokens: 89
+INFO 01-24 21:47:54,024 model_runner.py:258] decode execute tokens: 89
+INFO 01-24 21:47:54,040 model_runner.py:258] decode execute tokens: 88
+INFO 01-24 21:47:54,057 model_runner.py:258] decode execute tokens: 88
+INFO 01-24 21:47:54,073 model_runner.py:258] decode execute tokens: 88
+INFO 01-24 21:47:54,089 model_runner.py:258] decode execute tokens: 88
+INFO 01-24 21:47:54,106 model_runner.py:258] decode execute tokens: 88
+INFO 01-24 21:47:54,122 model_runner.py:258] decode execute tokens: 88
+INFO 01-24 21:47:54,138 model_runner.py:258] decode execute tokens: 88
+INFO 01-24 21:47:54,155 model_runner.py:258] decode execute tokens: 88
+INFO 01-24 21:47:54,171 model_runner.py:258] decode execute tokens: 87
+INFO 01-24 21:47:54,187 model_runner.py:258] decode execute tokens: 87
+INFO 01-24 21:47:54,203 model_runner.py:258] decode execute tokens: 87
+INFO 01-24 21:47:54,220 model_runner.py:258] decode execute tokens: 87
+INFO 01-24 21:47:54,236 model_runner.py:258] decode execute tokens: 87
+INFO 01-24 21:47:54,252 model_runner.py:258] decode execute tokens: 87
+INFO 01-24 21:47:54,268 model_runner.py:258] decode execute tokens: 87
+INFO 01-24 21:47:54,284 model_runner.py:258] decode execute tokens: 87
+INFO 01-24 21:47:54,301 model_runner.py:258] decode execute tokens: 86
+INFO 01-24 21:47:54,317 model_runner.py:258] decode execute tokens: 86
+INFO 01-24 21:47:54,333 model_runner.py:258] decode execute tokens: 86
+INFO 01-24 21:47:54,349 model_runner.py:258] decode execute tokens: 85
+INFO 01-24 21:47:54,365 model_runner.py:258] decode execute tokens: 85
+INFO 01-24 21:47:54,381 model_runner.py:258] decode execute tokens: 85
+INFO 01-24 21:47:54,398 model_runner.py:258] decode execute tokens: 84
+INFO 01-24 21:47:54,413 model_runner.py:258] decode execute tokens: 84
+INFO 01-24 21:47:54,429 model_runner.py:258] decode execute tokens: 84
+INFO 01-24 21:47:54,445 model_runner.py:258] decode execute tokens: 84
+INFO 01-24 21:47:54,461 model_runner.py:258] decode execute tokens: 84
+INFO 01-24 21:47:54,477 model_runner.py:258] decode execute tokens: 83
+INFO 01-24 21:47:54,493 model_runner.py:258] decode execute tokens: 83
+INFO 01-24 21:47:54,508 model_runner.py:258] decode execute tokens: 83
+INFO 01-24 21:47:54,524 model_runner.py:258] decode execute tokens: 83
+INFO 01-24 21:47:54,540 model_runner.py:258] decode execute tokens: 83
+INFO 01-24 21:47:54,556 model_runner.py:258] decode execute tokens: 82
+INFO 01-24 21:47:54,572 model_runner.py:258] decode execute tokens: 82
+INFO 01-24 21:47:54,588 model_runner.py:258] decode execute tokens: 82
+INFO 01-24 21:47:54,604 model_runner.py:258] decode execute tokens: 82
+INFO 01-24 21:47:54,620 model_runner.py:258] decode execute tokens: 82
+INFO 01-24 21:47:54,636 model_runner.py:258] decode execute tokens: 82
+INFO 01-24 21:47:54,652 model_runner.py:258] decode execute tokens: 81
+INFO 01-24 21:47:54,668 model_runner.py:258] decode execute tokens: 80
+INFO 01-24 21:47:54,684 model_runner.py:258] decode execute tokens: 80
+INFO 01-24 21:47:54,700 model_runner.py:258] decode execute tokens: 80
+INFO 01-24 21:47:54,716 model_runner.py:258] decode execute tokens: 80
+INFO 01-24 21:47:54,732 model_runner.py:258] decode execute tokens: 80
+INFO 01-24 21:47:54,748 model_runner.py:258] decode execute tokens: 80
+INFO 01-24 21:47:54,764 model_runner.py:258] decode execute tokens: 79
+INFO 01-24 21:47:54,780 model_runner.py:258] decode execute tokens: 79
+INFO 01-24 21:47:54,796 model_runner.py:258] decode execute tokens: 79
+INFO 01-24 21:47:54,812 model_runner.py:258] decode execute tokens: 77
+INFO 01-24 21:47:54,828 model_runner.py:258] decode execute tokens: 76
+INFO 01-24 21:47:54,843 model_runner.py:258] decode execute tokens: 76
+INFO 01-24 21:47:54,859 model_runner.py:258] decode execute tokens: 76
+INFO 01-24 21:47:54,875 model_runner.py:258] decode execute tokens: 76
+INFO 01-24 21:47:54,891 model_runner.py:258] decode execute tokens: 76
+INFO 01-24 21:47:54,907 model_runner.py:258] decode execute tokens: 76
+INFO 01-24 21:47:54,923 model_runner.py:258] decode execute tokens: 75
+INFO 01-24 21:47:54,939 model_runner.py:258] decode execute tokens: 75
+INFO 01-24 21:47:54,954 model_runner.py:258] decode execute tokens: 75
+INFO 01-24 21:47:54,970 model_runner.py:258] decode execute tokens: 75
+INFO 01-24 21:47:54,986 model_runner.py:258] decode execute tokens: 75
+INFO 01-24 21:47:55,002 model_runner.py:258] decode execute tokens: 75
+INFO 01-24 21:47:55,018 model_runner.py:258] decode execute tokens: 73
+INFO 01-24 21:47:55,034 model_runner.py:258] decode execute tokens: 73
+INFO 01-24 21:47:55,049 model_runner.py:258] decode execute tokens: 72
+INFO 01-24 21:47:55,065 model_runner.py:258] decode execute tokens: 72
+INFO 01-24 21:47:55,080 model_runner.py:258] decode execute tokens: 72
+INFO 01-24 21:47:55,095 model_runner.py:258] decode execute tokens: 72
+INFO 01-24 21:47:55,111 model_runner.py:258] decode execute tokens: 72
+INFO 01-24 21:47:55,126 model_runner.py:258] decode execute tokens: 72
+INFO 01-24 21:47:55,141 model_runner.py:258] decode execute tokens: 72
+INFO 01-24 21:47:55,157 model_runner.py:258] decode execute tokens: 72
+INFO 01-24 21:47:55,172 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,188 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,203 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,219 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,234 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,249 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,265 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,280 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,296 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,311 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,326 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,342 model_runner.py:258] decode execute tokens: 71
+INFO 01-24 21:47:55,357 model_runner.py:258] decode execute tokens: 69
+INFO 01-24 21:47:55,373 model_runner.py:258] decode execute tokens: 68
+INFO 01-24 21:47:55,388 model_runner.py:258] decode execute tokens: 68
+INFO 01-24 21:47:55,403 model_runner.py:258] decode execute tokens: 68
+INFO 01-24 21:47:55,419 model_runner.py:258] decode execute tokens: 67
+INFO 01-24 21:47:55,434 model_runner.py:258] decode execute tokens: 67
+INFO 01-24 21:47:55,450 model_runner.py:258] decode execute tokens: 67
+INFO 01-24 21:47:55,465 model_runner.py:258] decode execute tokens: 67
+INFO 01-24 21:47:55,480 model_runner.py:258] decode execute tokens: 67
+INFO 01-24 21:47:55,496 model_runner.py:258] decode execute tokens: 67
+INFO 01-24 21:47:55,511 model_runner.py:258] decode execute tokens: 67
+INFO 01-24 21:47:55,526 model_runner.py:258] decode execute tokens: 67
+INFO 01-24 21:47:55,541 model_runner.py:258] decode execute tokens: 67
+INFO 01-24 21:47:55,557 model_runner.py:258] decode execute tokens: 67
+INFO 01-24 21:47:55,572 model_runner.py:258] decode execute tokens: 67
+INFO 01-24 21:47:55,587 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,603 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,618 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,633 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,648 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,664 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,679 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,695 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,710 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,725 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,741 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,756 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,772 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,787 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,802 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,817 model_runner.py:258] decode execute tokens: 65
+INFO 01-24 21:47:55,833 model_runner.py:258] decode execute tokens: 63
+INFO 01-24 21:47:55,848 model_runner.py:258] decode execute tokens: 63
+INFO 01-24 21:47:55,863 model_runner.py:258] decode execute tokens: 63
+INFO 01-24 21:47:55,879 model_runner.py:258] decode execute tokens: 63
+INFO 01-24 21:47:55,894 model_runner.py:258] decode execute tokens: 63
+INFO 01-24 21:47:55,909 model_runner.py:258] decode execute tokens: 63
+INFO 01-24 21:47:55,924 model_runner.py:258] decode execute tokens: 63
+INFO 01-24 21:47:55,940 model_runner.py:258] decode execute tokens: 62
+INFO 01-24 21:47:55,955 model_runner.py:258] decode execute tokens: 61
+INFO 01-24 21:47:55,970 model_runner.py:258] decode execute tokens: 61
+INFO 01-24 21:47:55,986 model_runner.py:258] decode execute tokens: 61
+INFO 01-24 21:47:56,001 model_runner.py:258] decode execute tokens: 60
+INFO 01-24 21:47:56,015 model_runner.py:258] decode execute tokens: 60
+INFO 01-24 21:47:56,030 model_runner.py:258] decode execute tokens: 60
+INFO 01-24 21:47:56,045 model_runner.py:258] decode execute tokens: 60
+INFO 01-24 21:47:56,060 model_runner.py:258] decode execute tokens: 60
+INFO 01-24 21:47:56,075 model_runner.py:258] decode execute tokens: 60
+INFO 01-24 21:47:56,090 model_runner.py:258] decode execute tokens: 60
+INFO 01-24 21:47:56,105 model_runner.py:258] decode execute tokens: 60
+INFO 01-24 21:47:56,120 model_runner.py:258] decode execute tokens: 59
+INFO 01-24 21:47:56,134 model_runner.py:258] decode execute tokens: 59
+INFO 01-24 21:47:56,149 model_runner.py:258] decode execute tokens: 59
+INFO 01-24 21:47:56,164 model_runner.py:258] decode execute tokens: 59
+INFO 01-24 21:47:56,179 model_runner.py:258] decode execute tokens: 59
+INFO 01-24 21:47:56,193 model_runner.py:258] decode execute tokens: 59
+INFO 01-24 21:47:56,208 model_runner.py:258] decode execute tokens: 59
+INFO 01-24 21:47:56,223 model_runner.py:258] decode execute tokens: 59
+INFO 01-24 21:47:56,237 model_runner.py:258] decode execute tokens: 59
+INFO 01-24 21:47:56,252 model_runner.py:258] decode execute tokens: 59
+INFO 01-24 21:47:56,267 model_runner.py:258] decode execute tokens: 59
+INFO 01-24 21:47:56,282 model_runner.py:258] decode execute tokens: 56
+INFO 01-24 21:47:56,297 model_runner.py:258] decode execute tokens: 56
+INFO 01-24 21:47:56,312 model_runner.py:258] decode execute tokens: 54
+INFO 01-24 21:47:56,326 model_runner.py:258] decode execute tokens: 51
+INFO 01-24 21:47:56,341 model_runner.py:258] decode execute tokens: 51
+INFO 01-24 21:47:56,355 model_runner.py:258] decode execute tokens: 51
+INFO 01-24 21:47:56,370 model_runner.py:258] decode execute tokens: 50
+INFO 01-24 21:47:56,384 model_runner.py:258] decode execute tokens: 50
+INFO 01-24 21:47:56,399 model_runner.py:258] decode execute tokens: 50
+INFO 01-24 21:47:56,413 model_runner.py:258] decode execute tokens: 50
+INFO 01-24 21:47:56,428 model_runner.py:258] decode execute tokens: 50
+INFO 01-24 21:47:56,442 model_runner.py:258] decode execute tokens: 50
+INFO 01-24 21:47:56,457 model_runner.py:258] decode execute tokens: 49
+INFO 01-24 21:47:56,471 model_runner.py:258] decode execute tokens: 49
+INFO 01-24 21:47:56,486 model_runner.py:258] decode execute tokens: 48
+INFO 01-24 21:47:56,500 model_runner.py:258] decode execute tokens: 48
+INFO 01-24 21:47:56,514 model_runner.py:258] decode execute tokens: 47
+INFO 01-24 21:47:56,528 model_runner.py:258] decode execute tokens: 47
+INFO 01-24 21:47:56,542 model_runner.py:258] decode execute tokens: 47
+INFO 01-24 21:47:56,556 model_runner.py:258] decode execute tokens: 47
+INFO 01-24 21:47:56,570 model_runner.py:258] decode execute tokens: 46
+INFO 01-24 21:47:56,584 model_runner.py:258] decode execute tokens: 46
+INFO 01-24 21:47:56,598 model_runner.py:258] decode execute tokens: 46
+INFO 01-24 21:47:56,612 model_runner.py:258] decode execute tokens: 46
+INFO 01-24 21:47:56,626 model_runner.py:258] decode execute tokens: 46
+INFO 01-24 21:47:56,640 model_runner.py:258] decode execute tokens: 46
+INFO 01-24 21:47:56,654 model_runner.py:258] decode execute tokens: 46
+INFO 01-24 21:47:56,668 model_runner.py:258] decode execute tokens: 45
+INFO 01-24 21:47:56,682 model_runner.py:258] decode execute tokens: 45
+INFO 01-24 21:47:56,696 model_runner.py:258] decode execute tokens: 45
+INFO 01-24 21:47:56,710 model_runner.py:258] decode execute tokens: 44
+INFO 01-24 21:47:56,724 model_runner.py:258] decode execute tokens: 44
+INFO 01-24 21:47:56,738 model_runner.py:258] decode execute tokens: 43
+INFO 01-24 21:47:56,752 model_runner.py:258] decode execute tokens: 43
+INFO 01-24 21:47:56,766 model_runner.py:258] decode execute tokens: 42
+INFO 01-24 21:47:56,780 model_runner.py:258] decode execute tokens: 41
+INFO 01-24 21:47:56,794 model_runner.py:258] decode execute tokens: 40
+INFO 01-24 21:47:56,808 model_runner.py:258] decode execute tokens: 40
+INFO 01-24 21:47:56,822 model_runner.py:258] decode execute tokens: 39
+INFO 01-24 21:47:56,836 model_runner.py:258] decode execute tokens: 39
+INFO 01-24 21:47:56,850 model_runner.py:258] decode execute tokens: 38
+INFO 01-24 21:47:56,864 model_runner.py:258] decode execute tokens: 38
+INFO 01-24 21:47:56,878 model_runner.py:258] decode execute tokens: 38
+INFO 01-24 21:47:56,891 model_runner.py:258] decode execute tokens: 38
+INFO 01-24 21:47:56,905 model_runner.py:258] decode execute tokens: 38
+INFO 01-24 21:47:56,919 model_runner.py:258] decode execute tokens: 38
+INFO 01-24 21:47:56,933 model_runner.py:258] decode execute tokens: 38
+INFO 01-24 21:47:56,947 model_runner.py:258] decode execute tokens: 38
+INFO 01-24 21:47:56,961 model_runner.py:258] decode execute tokens: 38
+INFO 01-24 21:47:56,975 model_runner.py:258] decode execute tokens: 37
+INFO 01-24 21:47:56,988 model_runner.py:258] decode execute tokens: 35
+INFO 01-24 21:47:57,001 model_runner.py:258] decode execute tokens: 35
+INFO 01-24 21:47:57,015 model_runner.py:258] decode execute tokens: 35
+INFO 01-24 21:47:57,028 model_runner.py:258] decode execute tokens: 35
+INFO 01-24 21:47:57,041 model_runner.py:258] decode execute tokens: 35
+INFO 01-24 21:47:57,054 model_runner.py:258] decode execute tokens: 35
+INFO 01-24 21:47:57,067 model_runner.py:258] decode execute tokens: 35
+INFO 01-24 21:47:57,081 model_runner.py:258] decode execute tokens: 35
+INFO 01-24 21:47:57,094 model_runner.py:258] decode execute tokens: 34
+INFO 01-24 21:47:57,107 model_runner.py:258] decode execute tokens: 34
+INFO 01-24 21:47:57,120 model_runner.py:258] decode execute tokens: 34
+INFO 01-24 21:47:57,133 model_runner.py:258] decode execute tokens: 34
+INFO 01-24 21:47:57,146 model_runner.py:258] decode execute tokens: 34
+INFO 01-24 21:47:57,160 model_runner.py:258] decode execute tokens: 33
+INFO 01-24 21:47:57,173 model_runner.py:258] decode execute tokens: 32
+INFO 01-24 21:47:57,186 model_runner.py:258] decode execute tokens: 32
+INFO 01-24 21:47:57,199 model_runner.py:258] decode execute tokens: 31
+INFO 01-24 21:47:57,212 model_runner.py:258] decode execute tokens: 30
+INFO 01-24 21:47:57,225 model_runner.py:258] decode execute tokens: 30
+INFO 01-24 21:47:57,239 model_runner.py:258] decode execute tokens: 30
+INFO 01-24 21:47:57,252 model_runner.py:258] decode execute tokens: 29
+INFO 01-24 21:47:57,265 model_runner.py:258] decode execute tokens: 29
+INFO 01-24 21:47:57,278 model_runner.py:258] decode execute tokens: 28
+INFO 01-24 21:47:57,291 model_runner.py:258] decode execute tokens: 28
+INFO 01-24 21:47:57,304 model_runner.py:258] decode execute tokens: 26
+INFO 01-24 21:47:57,317 model_runner.py:258] decode execute tokens: 26
+INFO 01-24 21:47:57,330 model_runner.py:258] decode execute tokens: 25
+INFO 01-24 21:47:57,343 model_runner.py:258] decode execute tokens: 25
+INFO 01-24 21:47:57,355 model_runner.py:258] decode execute tokens: 25
+INFO 01-24 21:47:57,368 model_runner.py:258] decode execute tokens: 23
+INFO 01-24 21:47:57,381 model_runner.py:258] decode execute tokens: 23
+INFO 01-24 21:47:57,394 model_runner.py:258] decode execute tokens: 22
+INFO 01-24 21:47:57,406 model_runner.py:258] decode execute tokens: 21
+INFO 01-24 21:47:57,419 model_runner.py:258] decode execute tokens: 20
+INFO 01-24 21:47:57,432 model_runner.py:258] decode execute tokens: 20
+INFO 01-24 21:47:57,444 model_runner.py:258] decode execute tokens: 20
+INFO 01-24 21:47:57,457 model_runner.py:258] decode execute tokens: 20
+INFO 01-24 21:47:57,469 model_runner.py:258] decode execute tokens: 20
+INFO 01-24 21:47:57,482 model_runner.py:258] decode execute tokens: 20
+INFO 01-24 21:47:57,494 model_runner.py:258] decode execute tokens: 19
+INFO 01-24 21:47:57,506 model_runner.py:258] decode execute tokens: 19
+INFO 01-24 21:47:57,519 model_runner.py:258] decode execute tokens: 19
+INFO 01-24 21:47:57,531 model_runner.py:258] decode execute tokens: 18
+INFO 01-24 21:47:57,544 model_runner.py:258] decode execute tokens: 18
+INFO 01-24 21:47:57,556 model_runner.py:258] decode execute tokens: 18
+INFO 01-24 21:47:57,568 model_runner.py:258] decode execute tokens: 18
+INFO 01-24 21:47:57,581 model_runner.py:258] decode execute tokens: 18
+INFO 01-24 21:47:57,593 model_runner.py:258] decode execute tokens: 18
+INFO 01-24 21:47:57,605 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,618 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,630 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,642 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,655 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,667 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,680 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,692 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,704 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,717 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,729 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,741 model_runner.py:258] decode execute tokens: 17
+INFO 01-24 21:47:57,754 model_runner.py:258] decode execute tokens: 15
+INFO 01-24 21:47:57,766 model_runner.py:258] decode execute tokens: 15
+INFO 01-24 21:47:57,779 model_runner.py:258] decode execute tokens: 15
+INFO 01-24 21:47:57,791 model_runner.py:258] decode execute tokens: 14
+INFO 01-24 21:47:57,803 model_runner.py:258] decode execute tokens: 14
+INFO 01-24 21:47:57,816 model_runner.py:258] decode execute tokens: 14
+INFO 01-24 21:47:57,828 model_runner.py:258] decode execute tokens: 13
+INFO 01-24 21:47:57,840 model_runner.py:258] decode execute tokens: 13
+INFO 01-24 21:47:57,852 model_runner.py:258] decode execute tokens: 13
+INFO 01-24 21:47:57,865 model_runner.py:258] decode execute tokens: 13
+INFO 01-24 21:47:57,878 model_runner.py:258] decode execute tokens: 13
+INFO 01-24 21:47:57,890 model_runner.py:258] decode execute tokens: 13
+INFO 01-24 21:47:57,902 model_runner.py:258] decode execute tokens: 13
+INFO 01-24 21:47:57,914 model_runner.py:258] decode execute tokens: 13
+INFO 01-24 21:47:57,927 model_runner.py:258] decode execute tokens: 12
+INFO 01-24 21:47:57,939 model_runner.py:258] decode execute tokens: 12
+INFO 01-24 21:47:57,951 model_runner.py:258] decode execute tokens: 12
+INFO 01-24 21:47:57,963 model_runner.py:258] decode execute tokens: 12
+INFO 01-24 21:47:57,975 model_runner.py:258] decode execute tokens: 12
+INFO 01-24 21:47:57,987 model_runner.py:258] decode execute tokens: 12
+INFO 01-24 21:47:58,000 model_runner.py:258] decode execute tokens: 11
+INFO 01-24 21:47:58,012 model_runner.py:258] decode execute tokens: 11
+INFO 01-24 21:47:58,024 model_runner.py:258] decode execute tokens: 11
+INFO 01-24 21:47:58,036 model_runner.py:258] decode execute tokens: 11
+INFO 01-24 21:47:58,048 model_runner.py:258] decode execute tokens: 11
+INFO 01-24 21:47:58,060 model_runner.py:258] decode execute tokens: 11
+INFO 01-24 21:47:58,072 model_runner.py:258] decode execute tokens: 10
+INFO 01-24 21:47:58,084 model_runner.py:258] decode execute tokens: 10
+INFO 01-24 21:47:58,096 model_runner.py:258] decode execute tokens: 10
+INFO 01-24 21:47:58,108 model_runner.py:258] decode execute tokens: 9
+INFO 01-24 21:47:58,120 model_runner.py:258] decode execute tokens: 9
+INFO 01-24 21:47:58,132 model_runner.py:258] decode execute tokens: 9
+INFO 01-24 21:47:58,144 model_runner.py:258] decode execute tokens: 9
+INFO 01-24 21:47:58,156 model_runner.py:258] decode execute tokens: 9
+INFO 01-24 21:47:58,168 model_runner.py:258] decode execute tokens: 8
+INFO 01-24 21:47:58,180 model_runner.py:258] decode execute tokens: 8
+INFO 01-24 21:47:58,192 model_runner.py:258] decode execute tokens: 8
+INFO 01-24 21:47:58,204 model_runner.py:258] decode execute tokens: 8
+INFO 01-24 21:47:58,216 model_runner.py:258] decode execute tokens: 8
+INFO 01-24 21:47:58,228 model_runner.py:258] decode execute tokens: 7
+INFO 01-24 21:47:58,240 model_runner.py:258] decode execute tokens: 7
+INFO 01-24 21:47:58,252 model_runner.py:258] decode execute tokens: 6
+INFO 01-24 21:47:58,264 model_runner.py:258] decode execute tokens: 6
+INFO 01-24 21:47:58,276 model_runner.py:258] decode execute tokens: 6
+INFO 01-24 21:47:58,288 model_runner.py:258] decode execute tokens: 6
+INFO 01-24 21:47:58,300 model_runner.py:258] decode execute tokens: 6
+INFO 01-24 21:47:58,311 model_runner.py:258] decode execute tokens: 6
+INFO 01-24 21:47:58,323 model_runner.py:258] decode execute tokens: 6
+INFO 01-24 21:47:58,335 model_runner.py:258] decode execute tokens: 6
+INFO 01-24 21:47:58,347 model_runner.py:258] decode execute tokens: 6
+INFO 01-24 21:47:58,359 model_runner.py:258] decode execute tokens: 6
+INFO 01-24 21:47:58,370 model_runner.py:258] decode execute tokens: 6
+INFO 01-24 21:47:58,382 model_runner.py:258] decode execute tokens: 5
+INFO 01-24 21:47:58,394 model_runner.py:258] decode execute tokens: 4
+INFO 01-24 21:47:58,406 model_runner.py:258] decode execute tokens: 4
+INFO 01-24 21:47:58,417 model_runner.py:258] decode execute tokens: 4
+INFO 01-24 21:47:58,429 model_runner.py:258] decode execute tokens: 4
+INFO 01-24 21:47:58,441 model_runner.py:258] decode execute tokens: 3
+INFO 01-24 21:47:58,452 model_runner.py:258] decode execute tokens: 3
+INFO 01-24 21:47:58,464 model_runner.py:258] decode execute tokens: 1
+INFO 01-24 21:47:58,476 model_runner.py:258] decode execute tokens: 1
+INFO 01-24 21:47:58,488 model_runner.py:258] decode execute tokens: 1
+INFO 01-24 21:47:58,499 model_runner.py:258] decode execute tokens: 1
+INFO 01-24 21:47:58,544 bench.py:39] Total: 143770tok, Time: 20.03s, Throughput: 7177.14tok/s
