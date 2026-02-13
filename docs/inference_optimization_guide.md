@@ -465,8 +465,5 @@ Attention 计算复杂度为 O(N²)，是推理的主要计算瓶颈。
 - **PyTorch Performance Tuning**: https://pytorch.org/tutorials/recipes/recipes/tuning_guide.html
 - **NVIDIA Performance Guide**: https://docs.nvidia.com/deeplearning/performance/index.html
 
----
 
-*最后更新：2025年2月*
 
-*维护者：Nano-vLLM-Ascend 项目团队*
